@@ -13,7 +13,7 @@ clean:
 	yarn rimraf dist
 
 format:
-	yarn prettier --write .
+	yarn prettier --write --cache-location=.prettier . 
 
 lint:
 	yarn eslint . --max-warnings=0

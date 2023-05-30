@@ -1,5 +1,14 @@
 # Ignore artifacts:
 dist
 deploy
+infra
 .vscode
 coverage
+.pnp.cjs
+.pnp.loader.mjs
+.yarn
+.yarnrc.yml
+.eslintrc.yml
+.prettierrc.json
+package.json
+README.md
