@@ -24,10 +24,10 @@ resource "aws_iam_role" "lambda_iam_role" {
 module "lambda" {
   source = "./modules/lambda"
   for_each = fileset(path.cwd, "dist/*/index.js")
-  lambda_name = index(split(each.value, "/"), 1)
-  local_path = "dist/${index(split(each.value, "/"), 1)}/*"
+  lambda_name = split("/" ,each.value)[1]
+  local_path = "dist/${split("/", each.value)[1]}"
   assume_role_policy = aws_iam_role.lambda_iam_role.arn
   tags = {
-    Name = "lambda"
+    Name = split("/", each.value)[1]
   }
 }

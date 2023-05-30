@@ -9,8 +9,8 @@ terraform {
 
 data "archive_file" "zip" {
   type        = "zip"
-  source_file = var.local_path
-  output_path = "deploy/${var.lambda_name}.zip"
+  source_dir = "${path.cwd}/${var.local_path}"
+  output_path = "${path.cwd}/deploy/${var.lambda_name}.zip"
 }
 
 resource "aws_lambda_function" "lambda" {
