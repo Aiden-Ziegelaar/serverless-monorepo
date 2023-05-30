@@ -4,7 +4,10 @@
   "devDependencies": {
     "@types/aws-lambda": "^8.10.115",
     "@types/node": "^20.2.4",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
     "esbuild": "^0.17.19",
+    "eslint": "latest",
     "prettier": "2.8.8",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",

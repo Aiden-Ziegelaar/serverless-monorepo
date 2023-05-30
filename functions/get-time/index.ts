@@ -5,7 +5,7 @@ import {
 import "@lib/log_init";
 
 export const handler = async (
-  event: APIGatewayProxyEventV2WithLambdaAuthorizer<{}>,
+  event: APIGatewayProxyEventV2WithLambdaAuthorizer<unknown>,
   context: Context
 ) => {
   return {

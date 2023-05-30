@@ -12,8 +12,11 @@ build: clean typecheck
 clean: 
 	yarn rimraf dist
 
-prettier:
-	yarn dlx prettier --write .
+format:
+	yarn prettier --write .
+
+lint:
+	yarn eslint . --max-warnings=0
 
 plan:
 	terraform -chdir=infra plan

@@ -4,7 +4,9 @@ import {
 } from "aws-lambda";
 
 export const handler = async (
-  event: APIGatewayProxyEventV2WithLambdaAuthorizer<{}>,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  event: APIGatewayProxyEventV2WithLambdaAuthorizer<unknown>,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   context: Context
 ) => {
   return {
