@@ -13,9 +13,7 @@ clean:
 	yarn rimraf dist
 
 plan:
+	terraform -chdir=infra plan
 
 provision:
-
-deploy:
-
-update:
+	terraform -chdir=infra apply
