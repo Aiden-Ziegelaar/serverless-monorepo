@@ -6,11 +6,14 @@ init:
 typecheck:
 	yarn tsc --noEmit
 
-build: clean
+build: clean typecheck
 	yarn ts-node tools/build.ts
 
 clean: 
 	yarn rimraf dist
+
+prettier:
+	yarn dlx prettier --write .
 
 plan:
 	terraform -chdir=infra plan

@@ -1,1 +1,1 @@
-console.log('log_init')
+console.log("log_init");
