@@ -1,6 +1,5 @@
 import * as fs from 'node:fs/promises';
 import * as esbuild from 'esbuild';
-import ts from 'typescript';
 
 const main = async () => {
   const functionSources = await fs.readdir(`${process.cwd()}/functions`);
