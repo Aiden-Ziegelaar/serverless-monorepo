@@ -4,7 +4,7 @@ typecheck:
 build: clean typecheck
 	yarn ts-node tools/build.ts
 
-clean: 
+clean:
 	yarn rimraf dist
 
 format:
