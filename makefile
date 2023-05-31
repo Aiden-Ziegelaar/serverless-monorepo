@@ -1,8 +1,3 @@
-init:
-	corepack enable
-	corepack prepare yarn@stable --activate
-	yarn 
-
 typecheck:
 	yarn tsc --noEmit
 
