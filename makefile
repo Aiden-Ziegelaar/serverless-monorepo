@@ -18,3 +18,6 @@ plan:
 
 provision:
 	terraform -chdir=infra apply
+
+test:
+	yarn jest --coverage
