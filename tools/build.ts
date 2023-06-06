@@ -11,6 +11,7 @@ const main = async () => {
     bundle: true,
     outdir: "dist",
     sourcemap: true,
+    platform: "node",
   });
 };
 
